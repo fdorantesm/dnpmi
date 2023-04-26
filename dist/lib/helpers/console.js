@@ -9,12 +9,12 @@ function printPostInstall() {
     const yellow = print("yellow");
     const emptyLine = print();
     emptyLine();
-    yellow(`Thanks for installing moppet ${emojis_1.EMOJIS.PRAY}`);
+    yellow(`Thanks for installing npmdi ${emojis_1.EMOJIS.PRAY}`);
     dim("Please star the repository");
     dim("to help to maintain this package.");
     emptyLine();
     emptyLine();
-    print("cyan")(`${chalk.bold(`${emojis_1.EMOJIS.SPONGE} Moppet`)} ${chalk.underline("https://github.com/fdorantesm/moppet")}`);
+    print("cyan")(`${chalk.bold(`${emojis_1.EMOJIS.PACKAGE} Node Package Manager Deep Installer`)} ${chalk.underline("https://github.com/fdorantesm/npmdi")}`);
     emptyLine();
 }
 exports.printPostInstall = printPostInstall;

@@ -1,14 +1,14 @@
 {
-  "name": "moppet",
-  "version": "1.1.0",
-  "description": "A CLI tool to remove all deep node_modules from a directory",
+  "name": "npmdi",
+  "version": "1.0.0",
+  "description": "A CLI tool to install dependencies in deep directories",
   "main": "dist/index.js",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "bin": {
-    "mop": "./dist/index.js"
+    "npmdi": "./dist/index.js"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -21,25 +21,20 @@
   ],
   "keywords": [
     "node_modules",
-    "purge",
-    "clean",
-    "delete",
-    "remove",
-    "garbage",
+    "deep",
+    "install",
+    "installer",
+    "deep-installer",
     "modules",
-    "weight",
-    "lightweight",
-    "disk",
-    "space"
+    "npm-deep-installer",
+    "npm-deep"
   ],
   "author": "Fernando Dorantes <fernando@dorant.es>",
   "license": "ISC",
   "dependencies": {
     "@supercharge/promise-pool": "^2.4.0",
-    "byte-size": "^8.1.0",
     "chalk": "^4.1.2",
     "commander": "^10.0.0",
-    "fast-folder-size": "^1.7.1",
     "glob": "^7.1.7",
     "node-emoji": "^1.11.0",
     "rimraf": "^4.1.2"
@@ -50,6 +45,6 @@
     "typescript": "^4.9.5"
   },
   "bugs": {
-    "url": "https://github.com/fdorantesm/moppet/issues"
+    "url": "https://github.com/fdorantesm/npmdi/issues"
   }
 }
