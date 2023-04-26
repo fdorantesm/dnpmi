@@ -1,61 +1,57 @@
-## Description
+# npmdi
 
-<br>
-<br>
-
-<p>Have you ever installed npm dependencies on your projects by moving in and out of directories?</p>
-
-<br>
-
-Node Package Deep Installer is the solution. Just pass the directory where the dependencies should be installed, and go grab a coffee...
-
-Note: It only works with one depth level.
-
-<p>
-    Maybe you will be interested in [moppet](https://npmjs.com/package/moppet) 
-</p>
-
-<br>
+[![npm version](https://badge.fury.io/js/npmdi.svg)](https://badge.fury.io/js/npmdi)
+[![GitHub issues](https://img.shields.io/github/issues/fdorantesm/npmdi)](https://github.com/fdorantesm/npmdi/issues)
+[![GitHub forks](https://img.shields.io/github/forks/fdorantesm/npmdi)](https://github.com/fdorantesm/npmdi/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/fdorantesm/npmdi)](https://github.com/fdorantesm/npmdi/stargazers)
+[![GitHub License](https://img.shields.io/github/license/fdorantesm/npmdi)](https://github.com/fdorantesm/npmdi/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br>
 
----
-
-
-<br>
-<br>
+A command-line interface (CLI) tool to install Node.js modules in multiple projects with a single command.
 
 ## Installation
 
 <br>
-<br>
+
+You can install `npmdi` globally using `npm` or `yarn`:
 
 ```bash
-$ npm i -g npmdi
+npm i --global npmdi
 ```
 
 ```bash
-$ yarn global add npmdi
+yarn global add npmdi
 ```
 
-<br>
 <br>
 
 ---
 
-<br>
 <br>
 
 ## Usage
 
 <br>
-<br>
-
-By default this tool is using `npm`
-
-<br>
 
 ```bash
-$ npmdi -d ~/workspace
+Usage: npmdi [options]
+
+Options:
+  -V, --version              output the version number
+  -d, --directory <path>     path to the directory containing your Node.js projects (default: $(pwd))
+  -p, --package-manager <pm> name of the package manager to use (npm, yarn, or pnpm) (default: npm)
+  -h, --help                 output usage information
+
+```
+
+<br>
+<br>
+
+Example:
+
+```bash
+$ npmdi --directory ~/workspace --package-manager yarn
 INSTALL /Users/nano/workspace/alexa-skill-api
 INSTALL /Users/nano/workspace/dorantes-next-portfolio
 SKIP /Users/nano/workspace/fdorantesm/package.json missing
@@ -82,27 +78,45 @@ FINISHED Installed node packages in 18 projects
 <br>
 <br>
 
-### yarn way
-```bash
-$ npmdi -d ~/workspace -p yarn
-```
+## Contributing
 
-### pnpm way
-```bash
-$ npmdi -d ~/workspace -p pnpm
-```
+<br>
+
+<p>
+    Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+</p>
+
+<br>
+
+## License
+
+<br>
+
+<p>
+    This project is licensed under the MIT License - see the LICENSE file for details.
+</p>
+
+<br>
+
+## Buy me a coffee
+
+<br>
+
+<p>
+    If you find this tool useful and want to support its development, you can buy me a coffee via PayPal.
+</p>
+
+<br>
+
+[![Buy me a coffee via PayPal](https://img.shields.io/badge/Buy%20me%20a%20coffee-PayPal-blue?logo=paypal)](https://www.paypal.me/fdorantesm)
+
+<br>
+
+Your contributions will help me continue to improve this tool and develop new features. Thank you for your support!
 
 <br>
 <br>
-
-## Support
-- Buy me a coffee in [paypal](https://paypal.me/fdorantesm)
-
 <br>
-<br>
-
-## Contributions
-- Feel free to clone this project and make pull request to add new features
 
 <div align="center">
     <a href="https://github.com/fdorantesm" target="_blank">
@@ -125,10 +139,4 @@ $ npmdi -d ~/workspace -p pnpm
     </a>
 </div>
 
-<br/>  
-
-<div align="center">
-    <a href="https://paypal.me/fdorantesm" target="_blank" style="display: inline-block;">
-        <img src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal" align="center" />
-    </a>
-</div>  
+<br/>

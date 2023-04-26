@@ -1,6 +1,6 @@
 {
   "name": "npmdi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to install dependencies in deep directories",
   "main": "dist/index.js",
   "publishConfig": {
@@ -30,7 +30,7 @@
     "npm-deep"
   ],
   "author": "Fernando Dorantes <fernando@dorant.es>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@supercharge/promise-pool": "^2.4.0",
     "chalk": "^4.1.2",
